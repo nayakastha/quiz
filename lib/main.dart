@@ -28,32 +28,32 @@ class _MyAppState extends State<MyApp> {
   }
 
   var questions = [
-    "What is my favorite colour?",
-    "What is my favorite food?",
-    "Where would we most like to go on vacation?",
-    "One moment we could relive now?",
-    "Do you love me?(you better not say NO)!! "
+    "The metal whose salts are sensitive to light is ?",
+    "The device used for measuring altitudes is ?",
+    "The Gate way of India is ?",
+    "The first chairman of the Atomic Energy Commission was ?",
+    " D.D.T. was invented by ? "
   ];
   var ans1 = [
-    {"text": "Black", "score": 10},
-    {"text": "Mushrooms", "score": 0},
-    {"text": "Beach", "score": 0},
-    {"text": "First Kiss", "score": 10},
-    {"text": "YES", "score": 0}
+    {"text": "Silver", "score": 10},
+    {"text": "Ammeter", "score": 0},
+    {"text": "Goa", "score": 0},
+    {"text": "Dr.H.J.Bhabha", "score": 10},
+    {"text": "Rudeolf", "score": 0}
   ];
   var ans2 = [
-    {"text": "White", "score": 0},
-    {"text" : "Biryani", "score": 10},
-    {"text" : "Mountains", "score": 0},
-    {"text" : "First Hug", "score": 0},
-    {"text" : "YESS", "score": 0}
+    {"text": "Gold", "score": 0},
+    {"text" : "Altimeter", "score": 10},
+    {"text" : "Kolkata", "score": 0},
+    {"text" : "Dr.Vickram Sarabhai", "score": 0},
+    {"text" : "Dalton", "score": 0}
   ];
   var ans3 = [
-    {"text": "Blue", "score": 0},
-    {"text" : "Sea Food", "score": 0},
-    {"text": "We will do a toss or maybe visit both","score":10},
-    {"text" : "Holding Hands First time", "score": 0},
-    {"text" : "YESSSSS", "score": 10}
+    {"text": "Alumunium", "score": 0},
+    {"text" : "Galvanometer", "score": 0},
+    {"text": "Mumbai","score":10},
+    {"text" : "Dr.A.P.J.Abdul Kalam", "score": 0},
+    {"text" : "Mosle", "score": 10}
   ];
 
   @override
