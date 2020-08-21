@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
     {"text": "Gold", "score": 0},
     {"text" : "Altimeter", "score": 10},
     {"text" : "Kolkata", "score": 0},
-    {"text" : "Dr.Vickram Sarabhai", "score": 0},
+    {"text" : "Dr.Vikram Sarabhai", "score": 0},
     {"text" : "Dalton", "score": 0}
   ];
   var ans3 = [
