@@ -1,4 +1,4 @@
-# Quizz
+# Quizapp
 A quiz app built using Flutter. 
  Going with Flutter is a easy choice with its quick development time and fast execution times. 
 
@@ -8,7 +8,7 @@ This project is a starting point for a Flutter application.
 Clone this repository, with VSCode or Android Studio then download the Flutter tools. Note you will need to provide your own generated GCP or AWS keys for the services listed in `ios/Runner/GoogleService-Info.plist` 
 ```aidl
 $ git clone 
-$ cd quizapp
+$ cd Quizapp
 $ flutter run
 ```
 
