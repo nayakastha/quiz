@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class Answers extends StatelessWidget {
   final Function answerfun;
@@ -8,16 +9,14 @@ class Answers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
       width: double.maxFinite,
       child: RaisedButton(
-          color: Colors.lightBlueAccent,
+          color: Hexcolor('#FF855E'),
           textColor: Colors.black87,
           child: Text(
             answertext,
-            style: TextStyle(fontSize: 18,),
-
+            style: TextStyle(fontSize: 15, fontFamily: 'Poppins'),
           ),
           onPressed: answerfun),
     );

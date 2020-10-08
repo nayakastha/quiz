@@ -27,7 +27,8 @@ class Result extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: Text(
         results,
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        style: TextStyle(
+            fontSize: 20, fontWeight: FontWeight.bold, fontFamily: 'Poppins'),
         textAlign: TextAlign.center,
       ),
     );
