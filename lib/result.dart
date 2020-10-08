@@ -8,13 +8,16 @@ class Result extends StatelessWidget {
   Result(this.tscore);
 
   String get results {
-    var resultPhrase = "I can not be more impressed and grateful with the level of energy, communication,  professionalism, friendliness, expertise and skill ."
+    var resultPhrase =
+        "I can not be more impressed and grateful with the level of energy, communication,  professionalism, friendliness, expertise and skill .";
     if (tscore <= 30)
       resultPhrase += " Total Score : $tscore \n\n Could have done better!!";
     else if (tscore == 40)
-      resultPhrase += " Total Score : $tscore \n\n MANAGEABLE, I expected a perfect score";
+      resultPhrase +=
+          " Total Score : $tscore \n\n MANAGEABLE, I expected a perfect score";
     else
-      resultPhrase += " Total Score : $tscore \n\n I knew it.. You are awesome:)";
+      resultPhrase +=
+          " Total Score : $tscore \n\n I knew it.. You are awesome:)";
     return resultPhrase;
   }
 
