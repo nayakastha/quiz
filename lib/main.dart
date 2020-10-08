@@ -65,7 +65,7 @@ class _MyAppState extends State<MyApp> {
             appBar: AppBar(
               backgroundColor: Hexcolor('#FF3E8F'),
               title: Text(
-                "My First App",
+                "Quiz App",
                 style: TextStyle(fontFamily: 'Poppins'),
               ),
             ),
@@ -73,6 +73,7 @@ class _MyAppState extends State<MyApp> {
                 ? Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Questions(questions.elementAt(_questionIndex)),
                         Answers(

@@ -16,9 +16,7 @@ class Answers extends StatelessWidget {
           textColor: Colors.black87,
           child: Text(
             answertext,
-            style: TextStyle(
-              fontSize: 18,
-            ),
+            style: TextStyle(fontSize: 15, fontFamily: 'Poppins'),
           ),
           onPressed: answerfun),
     );
