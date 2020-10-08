@@ -1,7 +1,5 @@
 # Quizapp
 
-[![Build Status](https://travis-ci.org/ameysunu/quiz.svg?branch=master)](https://travis-ci.org/ameysunu/quiz)
-
 A quiz app built using Flutter. 
  Going with Flutter is a easy choice with its quick development time and fast execution times. 
 
