@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 import './questions.dart';
 import './answers.dart';
@@ -11,7 +12,6 @@ void main() {
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-
     return _MyAppState();
   }
 }
@@ -43,35 +43,53 @@ class _MyAppState extends State<MyApp> {
   ];
   var ans2 = [
     {"text": "Gold", "score": 0},
-    {"text" : "Altimeter", "score": 10},
-    {"text" : "Kolkata", "score": 0},
-    {"text" : "Dr.Vikram Sarabhai", "score": 0},
-    {"text" : "Dalton", "score": 0}
+    {"text": "Altimeter", "score": 10},
+    {"text": "Kolkata", "score": 0},
+    {"text": "Dr.Vikram Sarabhai", "score": 0},
+    {"text": "Dalton", "score": 0}
   ];
   var ans3 = [
     {"text": "Alumunium", "score": 0},
-    {"text" : "Galvanometer", "score": 0},
-    {"text": "Mumbai","score":10},
-    {"text" : "Dr.A.P.J.Abdul Kalam", "score": 0},
-    {"text" : "Mosle", "score": 10}
+    {"text": "Galvanometer", "score": 0},
+    {"text": "Mumbai", "score": 10},
+    {"text": "Dr.A.P.J.Abdul Kalam", "score": 0},
+    {"text": "Mosle", "score": 10}
   ];
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
+            backgroundColor: Hexcolor('#FFE8F7'),
             appBar: AppBar(
-              title: Text("My First App"),
+              backgroundColor: Hexcolor('#FF3E8F'),
+              title: Text(
+                "My First App",
+                style: TextStyle(fontFamily: 'Poppins'),
+              ),
             ),
             body: _questionIndex < 5
-                ? Column(
-              children: [
-                Questions(questions.elementAt(_questionIndex)),
-                Answers(() => _answerQuestion(ans1.elementAt(_questionIndex)['score']), ans1.elementAt(_questionIndex)['text']),
-                Answers(() => _answerQuestion(ans2.elementAt(_questionIndex)['score']), ans2.elementAt(_questionIndex)['text']),
-                Answers(() => _answerQuestion(ans3.elementAt(_questionIndex)['score']), ans3.elementAt(_questionIndex)['text']),
-              ],
-            )
+                ? Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Column(
+                      children: [
+                        Questions(questions.elementAt(_questionIndex)),
+                        Answers(
+                            () => _answerQuestion(
+                                ans1.elementAt(_questionIndex)['score']),
+                            ans1.elementAt(_questionIndex)['text']),
+                        Answers(
+                            () => _answerQuestion(
+                                ans2.elementAt(_questionIndex)['score']),
+                            ans2.elementAt(_questionIndex)['text']),
+                        Answers(
+                            () => _answerQuestion(
+                                ans3.elementAt(_questionIndex)['score']),
+                            ans3.elementAt(_questionIndex)['text']),
+                      ],
+                    ),
+                  )
                 : Result(totalScore)));
   }
 }
